@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Hunger</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <!---NAVEGAÇÃO -->>
+    <header>
+        <img src="logo.png" class="logo" alt="logo">
+        <nav class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="agriculturaSustentavel.html">Agricultura sustentável</a>
+            <a href="iaGenerativa.html">IA generativas</a>
+            <a href="modelosCultivos.html">Modelos de cultivo eficientes</a>
+            <a href="contato.html">Contato</a>
+            <a href="empresa.html">Empresa</a>
+            <a href="ongs.html"> Ongs</a>
+            <a href="agricultores.html"> Agricultores</a>
+
+
+        </nav><!---navigation-->
+<!-- botao -->
+        <nav class="loginCadastro">
+            <button class="botaoLogin" id="botaoLogin" onclick="document.getElementById('wrapper').style.display='block'">Login</button>
+        
+           
+
+
+        </nav>
+    </header>
+<!---botao e formulario login e cadastro -->
+    <div class="wrapper" id="wrapper">
+        <span class="icon-close" id="icon-close"><ion-icon name="close"></ion-icon></span>
+<!-- login -->
+        <div class="form-box login" id="formularioLogin">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail">
+                    </ion-icon> </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box  ">
+                    <span class="icon"><ion-icon name="lock">
+                        </ion-icon> </span>
+                    <input type="password" required>
+                    <label>Senha</label>
+                </div>
+
+                
+                <button type="submit" class="botaoEnviar">Avançar</button>
+                <div class="login-cadastro">
+                    <p> Você não tem conta? 
+                    <a href="cadastroEmpresa.html" class="register-link">Cadastre sua empresa</a>
+                    <a href="cadastroOngs.html" class="registerONG-link" id="registerONG-link">Cadastre sua ong</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    
+<!---SLIDES-->>
+ 
+<div class="content">
+
+    <div class="slides">
+
+        <!--TIPO RADIO = BOLINHA - DESAPARECEM E APARECE A LABEL-->
+        <input class="input" type="radio" name="slide" id="slide1" checked> <!--quando eu entro na pagina o 1° esta marcado-->
+        <input class="input" type="radio" name="slide" id="slide2">
+        <input class="input" type="radio" name="slide" id="slide3">
+        
+
+        <!--IMG LINKADA COM INPUT-->
+        <div class="slide s1"> <!--apartir do s1 as outras img vão rodar-->
+            <img src="alimentos1.png" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="desperdicio-alimentos.png" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="download.png" alt="">
+        </div>
+
+    </div>
+</div>
+
+<!--quem vai comandar as bolinhas - linkado ao input-->
+<div class="navigation-bar">
+
+    <label class="bar" for="slide1"></label>
+    <label class="bar" for="slide2"></label>
+    <label class="bar" for="slide3"></label>
+ 
+</div>
+
+<!-- Fim slides -->
+
+
+
+<div class="background-block"></div>
+<div class="visa">
+        <p >Visar combater o desperdício de
+            alimentos e promover a segurança
+            alimentar em nossas comunidades
+            é o primeiro passo pra uma sociedade moderna</p>
+
+           
+    </div>
+    <div class="visa2">
+        Connect Hunger
+
+    </div>
+    <div class="textoQuadrado1">
+        <p>
+            Plataforma
+            inovadora que conecta mercados, feiras e centrais de abastecimento às 
+            ONGS, permitindo recolher e distribuir alimentos próximos da validade. 
+
+        </p>
+
+    </div>
+    <div class="textoQuadrado2">
+        <p>
+            Ao se associar a nós, você terá a oportunidade de ser um agente de
+             mudança positiva, contribuindo para reduzir o
+             desperdício de alimentos e fornecer recursos essenciais para aqueles que mais precisam.
+
+        </p>
+
+    </div>
+  
+    <div class="visa3">
+        Benefícios para O seu negócio! 
+    </div>
+    <div>
+    <div class="text1Sequencia">
+        Redução de gastos com descarte
+    </div> 
+    <div class="text2Sequencia">
+        Responsabilidade social corporativa
+    </div>    
+    <div class="text3Sequencia">
+        Incentivos fiscais
+    </div> 
+    <div class="text4Sequencia">
+        Reconhecimento e visibilidade
+    </div> 
+    </div>
+
+    <div class="textoQuadrado3-">
+        <p>
+        Juntos
+        </p>
+    </div>
+    <div class="textoQuadrado3--">
+        <p>
+        Podemos fazer a diferença e criar um impacto significativo na vida das pessoas e do meio ambiente.
+        </p>
+    </div>
+    <!-- BOTOES PARTE DE BAIXO DA PAGINA -->
+    <div >
+    <button class="botaoCadastroEmpresa" ><a class="link-formatado" href="cadastroEmpresa.html">Cadastre sua Empresa</a></button>
+    <button class="botaoCadastroOng" ><a class="link-formatado" href="cadastroOngs.html">Cadastre sua ONG</a></button>
+    <button class="botaoCadastroOng" ><a class="link-formatado" href="cadastroAgronegocio.html"> Cadastro de Propriedade agrícola</a></button>
+
+    </div>
+    <!-- FIM BOTAO -->
+</div>
+<!-- FIM DO BODY PAGINA PRINCIPAL -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+    <div class="rodape">
+        
+          <li>Alysson Pinheiro - rm550837</li>  
+            <li>Anna Soares - rm99814</li> 
+            <li>Mel Maia- rm98266</li>
+            <li>Marcelo Henrique -rm98893</li>
+    </div>
+</html>

@@ -1,0 +1,1310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap' );
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+.logo{
+    
+    height: 100px;
+    margin-right: 890px;
+}
+
+
+
+/*NVEGAÇAO NA PARTE DE CIMA */
+.navigation a {
+position: relative;
+font-size: 0.9em;
+color: antiquewhite;
+text-decoration: none;
+font-weight: 2500;
+margin-left: 15px;
+
+}
+.navigation a::after {
+ content: '';
+ position: absolute;
+ left: 0;
+ bottom: -6px;
+ width: 100%;
+ height: 3px;
+ background: #1F540F;
+ border-radius: 5px;
+ transform-origin: right;
+ transform: scaleX(0);
+ transition: transform .5s;
+}
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation{
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+.loginCadastro{
+position: relative;
+color: antiquewhite;
+text-decoration: none;
+font-weight: 500;
+margin-left: 40px;
+
+}
+
+.loginCadastro .botaoLogin {
+
+    width: 80px;
+    height: 25px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color:antiquewhite;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+    margin-top: 50px;
+
+
+
+
+}
+.loginCadastro .botaoLogin:hover {
+background-color: #1F540F;
+color:aliceblue;
+
+
+}
+
+
+
+
+
+/*FORMULARIO DE LOGIN E CADASTRO */
+.wrapper {
+    position: fixed;
+    width: 450px;
+    height: 420px;
+    background: black;
+    border: 2px solid #426B31;
+    color: #FFF;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px #426B31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 150px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 100;
+}
+
+.wrapper .active-botao {
+    transform: scale(1);
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.wrapper.active .form-box.login {
+    display: none;
+    transition: none;
+}
+
+.wrapper.active {
+    height: 570px;
+    width: 1100px;
+    margin-left: 100px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+
+.login-cadastro .registerONG-link {
+    margin-left: 10px;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #030303;
+    font-size: 2em;
+    color: #426B31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #52aa26;
+    text-align: center;
+   
+}
+
+.input-box {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border-bottom: 2px solid #0e2901;
+    margin: 40px ;
+}
+
+.form-box.CadastroEmpresa {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-bottom: px solid #0e2901;
+    margin: 0px 0;
+}
+.form-box.CadastroOng {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #0e2901;
+    margin: 0px 0;
+    
+}
+
+.input-grupo-row0 {
+    /* float: left;
+    justify-content: space-between; */
+   margin-top: 180px;
+    display: flex;
+}
+
+.input-grupo-row1 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+.input-grupo-row2 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+.input-grupo-row3 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #426B31;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .7s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #FFF;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    margin-bottom: 10px;
+    right: 8px;
+    font-size: 1.1em;
+    color:#426B31;
+    line-height: 45px;
+}
+
+.EnvioCadastro{
+    font-size: .9em;
+    color: #426B31;
+    font-weight: 500;
+    margin: -405px 00px 15px;
+    display: flex;
+    justify-content: space-between;
+ 
+  
+
+
+}
+.EnvioCadastro label input{
+    accent-color: #426B31;
+    margin-right: 3px;
+
+}
+
+.EnvioCadastro a {
+    color: #426B31;
+text-decoration: none;
+
+}
+
+.EnvioCadastro a:hover {
+    text-decoration: underline;
+
+
+}
+.condicao{
+    margin-left: 210px;
+    margin-top: 420px
+}
+
+.botaoEnviar{
+width: 100%;
+height: 45px;
+background-color: #1F540F;
+color: #FFF;
+border: none;
+outline: none;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1em;
+font-weight: 500;
+
+
+}
+.botaoEnviarCadastro{
+    width: 20%;
+    height: 45px;
+    background-color: #1F540F;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 500px;
+    margin-top: 410px
+
+}
+
+
+
+
+.login-cadastro{
+font-size: .9em;
+color: #426B31;
+text-align: center;
+font-weight: 500;
+margin: 50px 1 15px;
+margin-left: -400px;
+
+
+}
+.login-cadastro p a{
+    color: #426B31;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 290px;
+   
+}
+
+.login-cadastro p a:hover {
+    text-decoration: underline;
+}
+
+
+/*PAGINA INDEX CARROSSEL DE IMAGENS E INFORMAÇOES*/
+
+.content {
+    
+    height: 250px;
+    width: 665px;
+    border-radius: 20px;
+    
+    /*IMG - tds vão respeitar e n vai ficar com a img inteira, vai respeitar e ficar uma atras da outras*/
+    overflow: hidden;
+    
+    /*centralizar as imagens*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+    
+    /*arruma a imagem*/
+    .content .slide img {
+      height: 100%;
+      width: 100%;
+    }
+    
+    /*arruamando a posição do bar*/
+    .navigation {
+      position: absolute;
+    }
+    .navigation-bar{
+        position: absolute;
+        bottom: 100px;
+        left: 620px;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    
+    /*bar em baixo*/
+    .bar {
+      width: 15px;
+      height: 15px;
+      border: 2px solid #0da30d;
+      margin: 6px;
+      /*deixar redondo*/
+      border-radius: 15px;
+      cursor: pointer;
+    
+      /*tempo de transição do input com as img*/
+      transform: .5s ease;
+    
+    }
+    
+    /*quando clico*/
+    .bar:hover {
+      background-color: #0da30d;
+    }
+    
+    /*desaparecer bolinhas do input - mas aparece bolinha do label - a ligação ainda funciona*/
+    input {
+    display: none;
+    }
+    
+    /*deixar uma img do lado da outra - antes estava em cima*/
+    .slides {
+      display: flex;
+    
+      /*são 5 img ent é 500%*/
+      width: 500%;
+    
+      height: 100%;
+    }
+    
+    /*img desaparecer o cantinho*/
+    .slide {
+      width: 20%;
+    /*img passando uma do lado da outra*/
+      transition: .6s;
+    }
+    
+    /*quando o 1° label for checkado - n acoentece nd*/
+    #slide1:checked ~ .s1 {
+      margin-left: 0;
+    } 
+    /*a cada 20% vai sair uma img e vai para esquerda*/
+    #slide2:checked ~ .s1 {
+      margin-left: -20%;
+    } 
+    
+    #slide3:checked ~ .s1 {
+      margin-left: -40%;
+    } 
+    
+    #slide4:checked ~ .s1 {
+      margin-left: -60%;
+    } 
+    
+    #slide5:checked ~ .s1 {
+      margin-left: -80%;
+    } 
+    
+
+/* pagina empresa  */
+.logo1{
+    width:150px;
+    height: 100px;
+    margin-right: 1000px;
+    position: relative;
+
+}
+
+.cabecalho{
+    position: relativa; 
+    margin-top: 140px;
+    color: #FFF;
+    font-size: 20px;
+    z-index: 2;
+    text-align: center;
+   
+}
+h1{
+   
+   
+}
+.cabecalho1{
+    position:absolute;
+    margin-top: 140px;   
+    z-index: 2;
+    
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 20px; color: #070707;
+}
+.cabecalho1 h2{
+    background-color: #021407;
+}
+
+
+.cabecalhoIA1-empresa {
+    position:absolute;
+
+
+}
+
+.cabecalhoIA1-empresa  h1{
+    margin-top: -305px; 
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 40px; color: #070707;
+    z-index: 2;
+    margin-left: 180px;
+    break-inside: avoid; 
+}
+.cabecalhoIA1-empresa  p{
+    color: #FFF;
+    margin-left: 100px;
+    margin-right: 600px;
+    text-align: center;
+    margin-top:60px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
+
+
+
+
+
+
+/* Navegaçao entre paginas */
+.navigation1 a {
+    position: relative;
+    font-size: 0.9em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 2500;
+    margin-left: 30px;
+    
+    }
+.navigation1 a::after {
+    content: '';
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     width: 100%;
+     height: 3px;
+     background: #1F540F;
+     border-radius: 5px;
+     transform-origin: right;
+     transform: scaleX(0);
+     transition: transform .5s;
+    
+    }
+.navigation1 a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+.navigation1{
+    margin-left: 200px;
+    margin-top: -50px;
+}
+/* FIM Navegaçao entre paginas */
+
+.visa{
+    position: absolute;
+    z-index: 2;
+    background-color:#0e2507;
+    color: #FFF; /* Cor do texto */
+    padding: 40px; /* Espaçamento interno do bloco de texto */
+  margin-top:  550px;
+    text-align: center  ;
+    font-size: 29px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.visa p{
+    background-color:#0e2507;
+}
+.visa2{
+    color: #070707;
+    margin-top: 850px;
+    text-align: center;
+    background-color: #030303;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 3em; color: #070707;
+}
+.visa3{
+    color: #070707;
+    margin-top: 450px;
+    text-align: center;
+    background-color: #030303;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 3em; color: #070707;
+}
+
+
+
+.textoQuadrado1{
+    position: absolute;
+    z-index: 2;
+    background-color:#0e2507;
+    color: #FFF; /* Cor do texto */
+    padding: 40px; /* Espaçamento interno do bloco de texto */
+  margin-top:  90px;
+    text-align: 50%;
+    font-size: 29px;
+    margin-left: 200px;
+    margin-right: 700px;
+  }
+  .textoQuadrado1 p{
+      background-color:#0e2507;
+  }
+  .textoQuadrado2{
+    position: absolute;
+    z-index: 2;
+    background-color:#0e2507;
+    color: #FFF; /* Cor do texto */
+    padding: 40px; /* Espaçamento interno do bloco de texto */
+  margin-top:  90px;
+    text-align: 50%;
+    font-size: 25px;
+    margin-left: 700px;
+    margin-right: 200px;
+  }
+  .textoQuadrado2 p{
+      background-color:#0e2507;
+  }
+
+.text1Sequencia{
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 60PX;
+    margin-left: 100px;
+    margin-right: 810px;
+}
+.text2Sequencia{
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 40PX;
+    margin-left: 740px;
+    margin-right: 130px;
+}
+.text3Sequencia{
+    border-bottom: 5px   solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 80PX;
+    margin-left: 100px;
+    margin-right: 990px;
+}
+.text4Sequencia{
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 40PX;
+    margin-left: 740px;
+    margin-right: 180px;
+}
+
+.textoQuadrado3- {
+color: #19eb19;
+text-align: center;
+margin-top: 250px;
+font-size: 2.7em;
+}
+
+.textoQuadrado3--{
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+
+    margin-left: 190PX;
+    margin-right: 110px;
+}
+/* botao final da pagina principal */
+.botaoCadastroEmpresa{
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color:antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 350px;
+    margin-top: 150px;
+
+
+}
+.botaoCadastroEmpresa:hover  {
+
+    background-color: #1F540F;
+    color:aliceblue
+    
+
+}
+.botaoCadastroOng{
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color:antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 16 px;
+
+}
+
+.botaoCadastroOng:hover {
+
+    background-color: #1F540F;
+    color:aliceblue
+}
+.link-formatado{
+    color:antiquewhite;
+    background: transparent;
+    outline: none;
+}
+
+
+
+
+.rodape{
+    background-color: #0e2507;
+    color: #FFF;
+  
+    margin-top: 200px;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 2;
+    width: 1310px;
+    height: 90px;
+}
+.rodape li{
+    background-color:#0e2507;
+   text-align: center;
+    list-style: none;
+}
+
+
+.rodape1{
+    background-color: #0e2507;
+    color: #FFF;
+  
+    margin-top: 1000px;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 2;
+    width: 1310px;
+    height: 90px;
+}
+.rodape1 li{
+    background-color:#0e2507;
+   text-align: center;
+    list-style: none;
+}
+
+
+/* PAGINA CONTATO */
+.titleContato{
+color: #0da30d;
+font-size: 2em;
+margin-left: 500px;
+
+
+}
+.input-contato{
+    position: relative;
+    width: 30%;
+    height: 50px;
+    border-bottom: 2px solid #0e2901;
+    margin: 40px 120px;
+    float: right;
+}
+.input-contato label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #426B31;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-contato input:focus~label,
+.input-contato input:valid~label {
+    top: -5px;
+}
+
+.input-conjunto{
+    
+
+  
+}
+.input-contato input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #FFF;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-contato .icon {
+    position: absolute;
+    margin-bottom: 10px;
+    right: 8px;
+    font-size: 1.1em;
+    color:#426B31;
+    line-height: 45px;
+}
+
+.input-contato-check{
+    color: #FFF;
+    margin-left: 200px;
+   
+   
+}
+
+
+
+/* FIM PAGINA CONTATO  */
+
+
+/* pagina ia generativa */
+
+.cabecalhoIA {
+    position:absolute;
+
+
+}
+
+.cabecalhoIA h1{
+    margin-top: -305px; 
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 40px; color: #070707;
+    z-index: 2;
+    margin-left: 300px;
+    break-inside: avoid; 
+}
+.cabecalhoIA p{
+    color: #FFF;
+    margin-left: 190px;
+    margin-right: 700px;
+    text-align: center;
+    margin-top:60px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
+
+.imagemPagina1{
+    height: 300px;
+    margin-left: 720px;
+    margin-top:250px;
+}
+
+.colum{
+    column-count: 2;
+    column-gap: 10px;
+}
+.colum-item{
+    break-inside: avoid; 
+}
+.colum-item-texto   {
+    color: #FFF ;
+    margin-top: 300px;
+    margin-left: 140px;
+}
+.text1Sequencia-aplicacao-ia{
+    color: #FFF;
+    margin-top: 320PX;
+    margin-left:720px;
+    margin-right: 810px;
+    width: 350px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+.text1Sequencia-aplicacao-ia:hover {
+background-color: #1F540F;
+color:aliceblue;
+
+
+}
+.text2Sequencia-aplicacao-ia{
+    color: #FFF;
+    margin-top: -45PX;
+    margin-left: 200px;
+    margin-right: 810px;
+    width: 350px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+.text2Sequencia-aplicacao-ia:hover {
+background-color: #1F540F;
+color:aliceblue;
+
+
+}
+.text3Sequencia-aplicacao-ia{
+    color: #FFF;
+    margin-top: 60PX;
+    margin-left: 490px;
+    margin-right: 810px;
+    width: 350px;
+    height: 85px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+.text3Sequencia-aplicacao-ia:hover {
+background-color: #1F540F;
+color:aliceblue;
+}
+
+
+
+/*FINAL do  primeiro box de imagem e texto  */
+
+
+
+.cabecalhoIA2 {
+    position:absolute;
+
+
+}
+
+
+.cabecalhoIA2 p{
+    color: #FFF;
+    margin-left: 740px;
+    margin-right: 100px;
+    text-align: center;
+    margin-top:-280px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
+
+.imagemPagina2{
+    height: 300px;
+    margin-left: 150px;
+    margin-top:150px;
+}
+
+.colum2{
+    column-count: 2;
+    column-gap: 10px;
+}
+.colum-item2{
+    break-inside: avoid; 
+}
+.colum-item-texto2   {
+    color: #FFF ;
+    margin-top: 300px;
+    margin-left: 140px;
+}
+/* final box 2 */
+
+/* box tres */
+.box-aplicacao{
+    position: absolute;
+    z-index: 2;
+    background-color:#0e2507;
+    color: #FFF; /* Cor do texto */
+    padding: 40px; /* Espaçamento interno do bloco de texto */
+  margin-top:  60px;
+    text-align: center  ;
+    font-size: 29px;
+    margin-left: 220px;
+    margin-right: 200px;
+}
+
+.box-aplicacao p{
+    background-color:#0e2507;
+}
+
+.text1Sequencia-aplicacao{
+    color: #FFF;
+    margin-top: 320PX;
+    margin-left:680px;
+    margin-right: 810px;
+    width: 350px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+.text1Sequencia-aplicacao:hover {
+background-color: #1F540F;
+color:aliceblue;
+
+
+}
+.text2Sequencia-aplicacao{
+    color: #FFF;
+    margin-top: -45PX;
+    margin-left: 200px;
+    margin-right: 810px;
+    width: 350px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+.text2Sequencia-aplicacao:hover {
+background-color: #1F540F;
+color:aliceblue;
+
+
+}
+.text3Sequencia-aplicacao{
+    color: #FFF;
+    margin-top: 60PX;
+    margin-left: 490px;
+    margin-right: 810px;
+    width: 350px;
+    height: 85px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+.text3Sequencia-aplicacao:hover {
+background-color: #1F540F;
+color:aliceblue;
+}
+
+
+
+.textoQuadrado-Aplicao2{
+    color: #eef5ee;
+    text-align: center;
+    margin-top: 220px;
+    font-size: 1.2em;
+    margin-top: 150px;
+    width: 940px;
+    height: 195px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .5s;
+    text-align: center;
+}
+
+
+
+    
+.textoQuadrado-Aplicao{
+    text-align:justify;
+    font-size: 2em;
+    color: #FFF;
+    margin-left: 190PX;
+    margin-right: 110px;
+}
+.textoQuadrado-Aplicao p {
+    margin-bottom: 30px; /* Ajuste o valor conforme necessário */
+}
+
+
+
+
+
+.textotextoQuadrado-Aplicao1{
+    color: #19eb19;
+    text-align: center;
+    margin-top: 110px;
+    font-size: 2.7em;
+}
+.textotextoQuadrado-Aplicao1 p{
+    margin-bottom: 20px;
+
+}
+
+.rodape2{
+background-color: #0e2507;
+color: #FFF;
+margin-top: 100px;
+font-size: 1.2em;
+position: absolute;
+z-index: 2;
+width: 1310px;
+height: 90px;
+}
+.rodape2 li{
+    background-color:#0e2507;
+   text-align: center;
+    list-style: none;
+}
+.cabecalhoIA1 {
+    position:absolute;
+
+
+}
+
+.cabecalhoIA1 h1{
+    margin-top: -305px; 
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 40px; color: #070707;
+    z-index: 2;
+    margin-left: 180px;
+    break-inside: avoid; 
+}
+.cabecalhoIA1 p{
+    color: #FFF;
+    margin-left: 100px;
+    margin-right: 600px;
+    text-align: center;
+    margin-top:60px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
+
+
+/* PAGINA AGRICULTORES */
+
+.cabecalhoIA3 {
+    position:absolute;
+
+
+}
+
+
+.cabecalhoIA3 p{
+    color: #FFF;
+    margin-left: 740px;
+    margin-right: 100px;
+    text-align: center;
+    margin-top:-350px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
+.textoQuadrado-Aplicao4{
+    text-align:justify;
+    font-size: 2em;
+    color: #FFF;
+    margin-top: 50px;
+    margin-left: 190PX;
+    margin-right: 110px;
+}
+.textotextoQuadrado-Aplicao5 p{
+    color: #19eb19;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.7em;
+}
+
+
+.rodape2{
+background-color: #0e2507;
+color: #FFF;
+margin-top: 100px;
+font-size: 1.2em;
+position: absolute;
+z-index: 2;
+width: 1310px;
+height: 90px;
+}
+.rodape2 li{
+    background-color:#0e2507;
+   text-align: center;
+    list-style: none;
+}
+.link{
+    color: #0ad42c;
+}
+.botaoCadastroEmpresa1{
+    width: 300px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color:antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 510px;
+    margin-top: 150px;
+ 
+
+
+}
+.botaoCadastroEmpresa1:hover  {
+
+    background-color: #1F540F;
+    color:aliceblue
+    
+
+}
+.botaoCadastroOng1{
+    width: 300px;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color:antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 510px;
+    margin-top: 100px;
+ 
+}
+
+.botaoCadastroOng1:hover {
+
+    background-color: #1F540F;
+    color:aliceblue
+}
+
+
+
+/* pagina ongs */
+.cabecalhoIA3 {
+    position:absolute;
+
+
+}
+
+.cabecalhoIA3 h1{
+    margin-top: -305px; 
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 40px; color: #070707;
+    z-index: 2;
+    margin-left: 380px;
+    break-inside: avoid; 
+}
+.cabecalhoIA3 p{
+    color: #FFF;
+    margin-left: 100px;
+    margin-right: 600px;
+    text-align: center;
+    margin-top:15px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
+.cabecalhoIA4 {
+    position:absolute;
+
+
+}
+
+.cabecalhoIA4 p{
+    color: #FFF;
+    margin-left: 700px;
+    margin-right: 100px;
+    text-align: center;
+   margin-top: -300px;
+    font-size: 30px;
+    break-inside: avoid; 
+}
