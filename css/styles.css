@@ -8,7 +8,6 @@
     font-family: 'Poppins' sans-serif;
     background-color: black;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -19,16 +18,12 @@ header {
     justify-content: center;
     z-index: 99;
 }
-
 .logo {
-
     height: 100px;
     margin-right: 890px;
 }
 
-
-
-/*NVEGAÇAO NA PARTE DE CIMA */
+/*NAVEGAÇAO NA PARTE DE CIMA */
 .navigation a {
     position: relative;
     font-size: 0.9em;
@@ -36,9 +31,7 @@ header {
     text-decoration: none;
     font-weight: 2500;
     margin-left: 15px;
-
 }
-
 .navigation a::after {
     content: '';
     position: absolute;
@@ -52,28 +45,23 @@ header {
     transform: scaleX(0);
     transition: transform .5s;
 }
-
 .navigation a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
-
 .navigation {
     margin-left: -50px;
     margin-top: 50px;
 }
-
 .loginCadastro {
     position: relative;
     color: antiquewhite;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-
 }
 
 .loginCadastro .botaoLogin {
-
     width: 80px;
     height: 25px;
     background: transparent;
@@ -87,22 +75,12 @@ header {
     margin-left: 40px;
     transition: .5s;
     margin-top: 50px;
-
-
-
-
 }
 
 .loginCadastro .botaoLogin:hover {
     background-color: #1F540F;
     color: aliceblue;
-
-
 }
-
-
-
-
 
 /*FORMULARIO DE LOGIN E CADASTRO */
 .wrapper {
@@ -134,28 +112,22 @@ header {
     transition: transform .18s ease;
     transform: translateX(0);
 }
-
 .wrapper.wrapper.active .form-box.login {
     display: none;
     transition: none;
 }
-
 .wrapper.active {
     height: 570px;
     width: 1100px;
     margin-left: 100px;
 }
-
 .wrapper .form-box {
     width: 100%;
     padding: 40px;
 }
-
-
 .login-cadastro .registerONG-link {
     margin-left: 10px;
 }
-
 .wrapper .icon-close {
     position: absolute;
     top: 0;
@@ -177,9 +149,7 @@ header {
     font-size: 2em;
     color: #52aa26;
     text-align: center;
-
 }
-
 .input-box {
     position: relative;
     width: 70%;
@@ -204,20 +174,17 @@ header {
     margin: 0px 0;
 
 }
-
 .input-grupo-row0 {
     /* float: left;
     justify-content: space-between; */
     margin-top: 180px;
     display: flex;
 }
-
 .input-grupo-row1 {
     /* float: left;
     justify-content: space-between; */
     display: flex;
 }
-
 .input-grupo-row2 {
     /* float: left;
     justify-content: space-between; */
@@ -229,7 +196,6 @@ header {
     justify-content: space-between; */
     display: flex;
 }
-
 .input-box label {
     position: absolute;
     top: 50%;
@@ -246,7 +212,6 @@ header {
 .input-box input:valid~label {
     top: -5px;
 }
-
 .input-box input {
     width: 100%;
     height: 100%;
@@ -275,28 +240,18 @@ header {
     margin: -405px 00px 15px;
     display: flex;
     justify-content: space-between;
-
-
-
-
 }
 
 .EnvioCadastro label input {
     accent-color: #426B31;
     margin-right: 3px;
-
 }
-
 .EnvioCadastro a {
     color: #426B31;
     text-decoration: none;
-
 }
-
 .EnvioCadastro a:hover {
     text-decoration: underline;
-
-
 }
 
 .condicao {
@@ -315,8 +270,6 @@ header {
     cursor: pointer;
     font-size: 1em;
     font-weight: 500;
-
-
 }
 
 .botaoEnviarCadastro {
@@ -333,10 +286,6 @@ header {
     margin-right: 500px;
     margin-top: 410px
 }
-
-
-
-
 .login-cadastro {
     font-size: .9em;
     color: #426B31;
@@ -344,8 +293,6 @@ header {
     font-weight: 500;
     margin: 50px 1 15px;
     margin-left: -400px;
-
-
 }
 
 .login-cadastro p a {
@@ -353,18 +300,15 @@ header {
     text-decoration: none;
     font-weight: 600;
     margin-left: 290px;
-
 }
 
 .login-cadastro p a:hover {
     text-decoration: underline;
 }
 
-
 /*PAGINA INDEX CARROSSEL DE IMAGENS E INFORMAÇOES*/
 
 .content {
-
     height: 250px;
     width: 665px;
     border-radius: 20px;
@@ -398,7 +342,6 @@ header {
     display: flex;
     margin-bottom: 50px;
 }
-
 /*bar em baixo*/
 .bar {
     width: 15px;
@@ -413,7 +356,6 @@ header {
     transform: .5s ease;
 
 }
-
 /*quando clico*/
 .bar:hover {
     background-color: #0da30d;
@@ -472,7 +414,6 @@ input {
     position: relative;
 
 }
-
 .cabecalho {
     position: relativa;
     margin-top: 140px;
@@ -503,7 +444,6 @@ h1 {}
 
 .cabecalhoIA1-empresa {
     position: absolute;
-
 
 }
 
