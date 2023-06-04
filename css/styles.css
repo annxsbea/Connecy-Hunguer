@@ -457,7 +457,6 @@ h1 {}
     margin-left: 180px;
     break-inside: avoid;
 }
-
 .cabecalhoIA1-empresa p {
     color: #FFF;
     margin-left: 100px;
@@ -467,12 +466,6 @@ h1 {}
     font-size: 30px;
     break-inside: avoid;
 }
-
-
-
-
-
-
 /* Navegaçao entre paginas */
 .navigation1 a {
     position: relative;
@@ -481,7 +474,6 @@ h1 {}
     text-decoration: none;
     font-weight: 2500;
     margin-left: 30px;
-
 }
 
 .navigation1 a::after {
@@ -510,7 +502,6 @@ h1 {}
 }
 
 /* FIM Navegaçao entre paginas */
-
 .visa {
     position: absolute;
     z-index: 2;
@@ -525,11 +516,9 @@ h1 {}
     margin-left: 200px;
     margin-right: 200px;
 }
-
 .visa p {
     background-color: #0e2507;
 }
-
 .visa2 {
     color: #070707;
     margin-top: 850px;
@@ -540,7 +529,6 @@ h1 {}
     font-size: 3em;
     color: #070707;
 }
-
 .visa3 {
     color: #070707;
     margin-top: 450px;
@@ -551,9 +539,6 @@ h1 {}
     font-size: 3em;
     color: #070707;
 }
-
-
-
 .textoQuadrado1 {
     position: absolute;
     z-index: 2;
@@ -572,7 +557,6 @@ h1 {}
 .textoQuadrado1 p {
     background-color: #0e2507;
 }
-
 .textoQuadrado2 {
     position: absolute;
     z-index: 2;
@@ -587,7 +571,6 @@ h1 {}
     margin-left: 700px;
     margin-right: 200px;
 }
-
 .textoQuadrado2 p {
     background-color: #0e2507;
 }
@@ -600,7 +583,6 @@ h1 {}
     margin-left: 100px;
     margin-right: 810px;
 }
-
 .text2Sequencia {
     border-bottom: 5px solid #0e2901;
     color: #FFF;
@@ -609,7 +591,6 @@ h1 {}
     margin-left: 740px;
     margin-right: 130px;
 }
-
 .text3Sequencia {
     border-bottom: 5px solid #0e2901;
     color: #FFF;
@@ -618,7 +599,6 @@ h1 {}
     margin-left: 100px;
     margin-right: 990px;
 }
-
 .text4Sequencia {
     border-bottom: 5px solid #0e2901;
     color: #FFF;
@@ -627,14 +607,12 @@ h1 {}
     margin-left: 740px;
     margin-right: 180px;
 }
-
 .textoQuadrado3- {
     color: #19eb19;
     text-align: center;
     margin-top: 250px;
     font-size: 2.7em;
 }
-
 .textoQuadrado3-- {
     text-align: center;
     font-size: 2em;
@@ -643,7 +621,6 @@ h1 {}
     margin-left: 190PX;
     margin-right: 110px;
 }
-
 /* botao final da pagina principal */
 .botaoCadastroEmpresa {
     width: 200px;
@@ -659,12 +636,9 @@ h1 {}
     transition: .5s;
     margin-left: 350px;
     margin-top: 150px;
-
-
 }
 
 .botaoCadastroEmpresa:hover {
-
     background-color: #1F540F;
     color: aliceblue
 }
@@ -682,28 +656,20 @@ h1 {}
     font-weight: 500;
     transition: .5s;
     margin-left: 16 px;
-
 }
 
 .botaoCadastroOng:hover {
-
     background-color: #1F540F;
     color: aliceblue
 }
-
 .link-formatado {
     color: antiquewhite;
     background: transparent;
     outline: none;
 }
-
-
-
-
 .rodape {
     background-color: #0e2507;
     color: #FFF;
-
     margin-top: 200px;
     font-size: 1.2em;
     position: absolute;
@@ -711,18 +677,14 @@ h1 {}
     width: 1310px;
     height: 90px;
 }
-
 .rodape li {
     background-color: #0e2507;
     text-align: center;
     list-style: none;
 }
-
-
 .rodape1 {
     background-color: #0e2507;
     color: #FFF;
-
     margin-top: 1000px;
     font-size: 1.2em;
     position: absolute;
@@ -730,23 +692,18 @@ h1 {}
     width: 1310px;
     height: 90px;
 }
-
 .rodape1 li {
     background-color: #0e2507;
     text-align: center;
     list-style: none;
 }
 
-
 /* PAGINA CONTATO */
 .titleContato {
     color: #0da30d;
     font-size: 2em;
     margin-left: 500px;
-
-
 }
-
 .input-contato {
     position: relative;
     width: 30%;
@@ -755,7 +712,6 @@ h1 {}
     margin: 40px 120px;
     float: right;
 }
-
 .input-contato label {
     position: absolute;
     top: 50%;
@@ -772,9 +728,6 @@ h1 {}
 .input-contato input:valid~label {
     top: -5px;
 }
-
-.input-conjunto {}
-
 .input-contato input {
     width: 100%;
     height: 100%;
@@ -786,7 +739,6 @@ h1 {}
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
-
 .input-contato .icon {
     position: absolute;
     margin-bottom: 10px;
@@ -795,27 +747,16 @@ h1 {}
     color: #426B31;
     line-height: 45px;
 }
-
 .input-contato-check {
     color: #FFF;
     margin-left: 200px;
-
-
 }
-
-
-
 /* FIM PAGINA CONTATO  */
-
-
 /* pagina ia generativa */
 
 .cabecalhoIA {
     position: absolute;
-
-
 }
-
 .cabecalhoIA h1 {
     margin-top: -305px;
     -webkit-text-stroke-width: 0.7px;
@@ -826,7 +767,6 @@ h1 {}
     margin-left: 300px;
     break-inside: avoid;
 }
-
 .cabecalhoIA p {
     color: #FFF;
     margin-left: 190px;
@@ -851,13 +791,11 @@ h1 {}
 .colum-item {
     break-inside: avoid;
 }
-
 .colum-item-texto {
     color: #FFF;
     margin-top: 300px;
     margin-left: 140px;
 }
-
 .text1Sequencia-aplicacao-ia {
     color: #FFF;
     margin-top: 320PX;
@@ -879,10 +817,7 @@ h1 {}
 .text1Sequencia-aplicacao-ia:hover {
     background-color: #1F540F;
     color: aliceblue;
-
-
 }
-
 .text2Sequencia-aplicacao-ia {
     color: #FFF;
     margin-top: -45PX;
@@ -904,10 +839,7 @@ h1 {}
 .text2Sequencia-aplicacao-ia:hover {
     background-color: #1F540F;
     color: aliceblue;
-
-
 }
-
 .text3Sequencia-aplicacao-ia {
     color: #FFF;
     margin-top: 60PX;
@@ -930,20 +862,10 @@ h1 {}
     background-color: #1F540F;
     color: aliceblue;
 }
-
-
-
 /*FINAL do  primeiro box de imagem e texto  */
-
-
-
 .cabecalhoIA2 {
     position: absolute;
-
-
 }
-
-
 .cabecalhoIA2 p {
     color: #FFF;
     margin-left: 740px;
@@ -953,7 +875,6 @@ h1 {}
     font-size: 30px;
     break-inside: avoid;
 }
-
 .imagemPagina2 {
     height: 300px;
     margin-left: 150px;
@@ -974,7 +895,6 @@ h1 {}
     margin-top: 300px;
     margin-left: 140px;
 }
-
 /* final box 2 */
 
 /* box tres */
@@ -992,11 +912,9 @@ h1 {}
     margin-left: 220px;
     margin-right: 200px;
 }
-
 .box-aplicacao p {
     background-color: #0e2507;
 }
-
 .text1Sequencia-aplicacao {
     color: #FFF;
     margin-top: 320PX;
@@ -1018,8 +936,6 @@ h1 {}
 .text1Sequencia-aplicacao:hover {
     background-color: #1F540F;
     color: aliceblue;
-
-
 }
 
 .text2Sequencia-aplicacao {
@@ -1043,10 +959,7 @@ h1 {}
 .text2Sequencia-aplicacao:hover {
     background-color: #1F540F;
     color: aliceblue;
-
-
 }
-
 .text3Sequencia-aplicacao {
     color: #FFF;
     margin-top: 60PX;
@@ -1069,9 +982,6 @@ h1 {}
     background-color: #1F540F;
     color: aliceblue;
 }
-
-
-
 .textoQuadrado-Aplicao2 {
     color: #eef5ee;
     text-align: center;
@@ -1089,10 +999,6 @@ h1 {}
     transition: .5s;
     text-align: center;
 }
-
-
-
-
 .textoQuadrado-Aplicao {
     text-align: justify;
     font-size: 2em;
@@ -1105,21 +1011,14 @@ h1 {}
     margin-bottom: 30px;
     /* Ajuste o valor conforme necessário */
 }
-
-
-
-
-
 .textotextoQuadrado-Aplicao1 {
     color: #19eb19;
     text-align: center;
     margin-top: 110px;
     font-size: 2.7em;
 }
-
 .textotextoQuadrado-Aplicao1 p {
     margin-bottom: 20px;
-
 }
 
 .rodape2 {
@@ -1132,19 +1031,14 @@ h1 {}
     width: 1310px;
     height: 90px;
 }
-
 .rodape2 li {
     background-color: #0e2507;
     text-align: center;
     list-style: none;
 }
-
 .cabecalhoIA1 {
     position: absolute;
-
-
 }
-
 .cabecalhoIA1 h1 {
     margin-top: -305px;
     -webkit-text-stroke-width: 0.7px;
@@ -1165,14 +1059,9 @@ h1 {}
     font-size: 30px;
     break-inside: avoid;
 }
-
-
 /* PAGINA AGRICULTORES */
-
 .cabecalhoIA3 {
     position: absolute;
-
-
 }
 
 
@@ -1275,24 +1164,16 @@ h1 {}
     transition: .5s;
     margin-left: 510px;
     margin-top: 100px;
-
 }
-
 .botaoCadastroOng1:hover {
 
     background-color: #1F540F;
     color: aliceblue
 }
-
-
-
 /* pagina ongs */
 .cabecalhoIA3 {
     position: absolute;
-
-
 }
-
 .cabecalhoIA3 h1 {
     margin-top: -305px;
     -webkit-text-stroke-width: 0.7px;
@@ -1303,7 +1184,6 @@ h1 {}
     margin-left: 380px;
     break-inside: avoid;
 }
-
 .cabecalhoIA3 p {
     color: #FFF;
     margin-left: 100px;
@@ -1313,13 +1193,9 @@ h1 {}
     font-size: 30px;
     break-inside: avoid;
 }
-
 .cabecalhoIA4 {
     position: absolute;
-
-
 }
-
 .cabecalhoIA4 p {
     color: #FFF;
     margin-left: 700px;
