@@ -16,14 +16,14 @@ setInterval( function(){
 const wrapper = document.querySelector('.wrapper');
 const botaoLogin = document.getElementById('botaoLogin');
 const loginLink = document.querySelector('.login-link');
-
+const iconClose = document.getElementById('.icon-close');
 
 
 botaoLogin.addEventListener('click', () => {
     wrapper.classList.add('active-botao');
     document.getElementById('wrapper').style.transform='scale(1)';
 });
-loginLink.addEventListener('click', () => {
-    wrapper.classList.remove('active');
-    
+iconClose.addEventListener('click', () => {
+    wrapper.classList.add('active-botao');
+    document.getElementById('wrapper').style.transform='scale(0)';
 });

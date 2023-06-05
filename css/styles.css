@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: black;
+    font-size: 12px;
 }
 
 header {
@@ -420,7 +422,11 @@ header {
 }
 
 /*desaparecer bolinhas do input - mas aparece bolinha do label - a ligação ainda funciona*/
-input {
+
+input:not([type='checkbox']) OR
+input:not([type='text']) OR
+input:not([type='password']) OR
+input:not([type='email']) {
     display: none;
 }
 
@@ -1250,6 +1256,19 @@ h1 {}
     text-align: justify;
     font-size: 2em;
     color: #FFF;
+    margin-top: 150px;
+    margin-left: 190PX;
+    margin-right: 190px;
+}
+
+.textoQuadrado-Aplicao4 p {
+    margin-bottom: 30px;
+}
+
+.textoQuadrado-Aplicao5 {
+    text-align: justify;
+    font-size: 2em;
+    color: #FFF;
     margin-top: 50px;
     margin-left: 190PX;
     margin-right: 110px;
@@ -1258,7 +1277,7 @@ h1 {}
 .textotextoQuadrado-Aplicao5 p {
     color: #19eb19;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 120px;
     font-size: 2.7em;
 }
 
