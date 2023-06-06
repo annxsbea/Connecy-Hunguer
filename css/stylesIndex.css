@@ -1,0 +1,1277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 890px;
+
+}
+
+/*NAVEGAÇAO NA PARTE DE CIMA */
+.navigation a {
+    position: relative;
+    font-size: 0.9em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 2500;
+    margin-left: 15px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #1F540F;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation {
+    margin-left: -50px;
+    margin-top: 50px;
+}
+
+.loginCadastro {
+    position: relative;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.loginCadastro .botaoLogin {
+    width: 80px;
+    height: 25px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: antiquewhite;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+    margin-top: 50px;
+}
+
+.loginCadastro .botaoLogin:hover {
+    background-color: #1F540F;
+    color: aliceblue;
+}
+
+/*FORMULARIO DE LOGIN E CADASTRO */
+.wrapper {
+    position: fixed;
+    width: 450px;
+    height: 420px;
+    background: black;
+    border: 2px solid #426B31;
+    color: #FFF;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px #426B31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 150px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    z-index: 100;
+}
+
+.wrapper .active-botao {
+    transform: scale(1);
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.wrapper.active .form-box.login {
+    display: none;
+    transition: none;
+}
+
+.wrapper.active {
+    height: 570px;
+    width: 1100px;
+    margin-left: 100px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.login-cadastro .registerONG-link {
+    margin-left: 10px;
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #030303;
+    font-size: 2em;
+    color: #426B31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: #52aa26;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border-bottom: 2px solid #0e2901;
+    margin: 40px;
+}
+
+.form-box.CadastroEmpresa {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-bottom: px solid #0e2901;
+    margin: 0px 0;
+}
+
+.form-box.CadastroOng {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #0e2901;
+    margin: 0px 0;
+
+}
+
+.input-grupo-row0 {
+    /* float: left;
+    justify-content: space-between; */
+    margin-top: 180px;
+    display: flex;
+}
+
+.input-grupo-row1 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+
+.input-grupo-row2 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+
+.input-grupo-row3 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #426B31;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .7s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #FFF;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    margin-bottom: 10px;
+    right: 8px;
+    font-size: 1.1em;
+    color: #426B31;
+    line-height: 45px;
+}
+
+.EnvioCadastro {
+    font-size: .9em;
+    color: #426B31;
+    font-weight: 500;
+    margin: -405px 00px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.EnvioCadastro label input {
+    accent-color: #426B31;
+    margin-right: 3px;
+}
+
+.EnvioCadastro a {
+    color: #426B31;
+    text-decoration: none;
+}
+
+.EnvioCadastro a:hover {
+    text-decoration: underline;
+}
+
+.condicao {
+    margin-left: 210px;
+    margin-top: 420px
+}
+
+.botaoEnviar {
+    width: 100%;
+    height: 45px;
+    background-color: #1F540F;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.botaoEnviarCadastro {
+    width: 20%;
+    height: 45px;
+    background-color: #1F540F;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 500px;
+    margin-top: 410px
+}
+
+.login-cadastro {
+    font-size: .9em;
+    color: #426B31;
+    text-align: center;
+    font-weight: 500;
+    margin: 50px 1 15px;
+    margin-left: -400px;
+}
+
+.login-cadastro p a {
+    color: #426B31;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 290px;
+}
+
+.login-cadastro p a:hover {
+    text-decoration: underline;
+}
+
+/*PAGINA INDEX CARROSSEL DE IMAGENS E INFORMAÇOES*/
+
+.content {
+    height: 250px;
+    width: 665px;
+    border-radius: 20px;
+
+    /*IMG - tds vão respeitar e n vai ficar com a img inteira, vai respeitar e ficar uma atras da outras*/
+    overflow: hidden;
+
+    /*centralizar as imagens*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*arruma a imagem*/
+.content .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+/*arruamando a posição do bar*/
+.navigation {
+    position: absolute;
+}
+
+.navigation-bar {
+    position: absolute;
+    bottom: 100px;
+    left: 620px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/*bar em baixo*/
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #0da30d;
+    margin: 6px;
+    /*deixar redondo*/
+    border-radius: 15px;
+    cursor: pointer;
+
+    /*tempo de transição do input com as img*/
+    transform: .5s ease;
+
+}
+
+/*quando clico*/
+.bar:hover {
+    background-color: #0da30d;
+}
+
+/*desaparecer bolinhas do input - mas aparece bolinha do label - a ligação ainda funciona*/
+
+
+input:not([type='text']) OR input:not([type='password']) OR input:not([type='email']) {
+    display: none;
+}
+
+/*deixar uma img do lado da outra - antes estava em cima*/
+.slides {
+    display: flex;
+
+    /*são 5 img ent é 500%*/
+    width: 500%;
+
+    height: 100%;
+}
+
+/*img desaparecer o cantinho*/
+.slide {
+    width: 20%;
+    /*img passando uma do lado da outra*/
+    transition: .6s;
+}
+
+/*quando o 1° label for checkado - n acoentece nd*/
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+/*a cada 20% vai sair uma img e vai para esquerda*/
+#slide2:checked~.s1 {
+    margin-left: -22%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+
+
+/* FIM Navegaçao entre paginas */
+.visa {
+    position: absolute;
+    z-index: 2;
+    background-color: #0e2507;
+    color: #FFF;
+    /* Cor do texto */
+    padding: 40px;
+    /* Espaçamento interno do bloco de texto */
+    margin-top: 550px;
+    text-align: center;
+    font-size: 29px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.visa p {
+    background-color: #0e2507;
+}
+
+.visa2 {
+    color: #070707;
+    margin-top: 850px;
+    text-align: center;
+    background-color: #030303;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 3em;
+    color: #070707;
+}
+
+.visa3 {
+    color: #070707;
+    margin-top: 650px;
+    text-align: center;
+    background-color: #030303;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #19eb19;
+    font-size: 3em;
+    color: #070707;
+}
+
+.textoQuadrado1 {
+    position: absolute;
+    z-index: 2;
+    background-color: #0e2507;
+    color: #FFF;
+    /* Cor do texto */
+    padding: 40px;
+    /* Espaçamento interno do bloco de texto */
+    margin-top: 90px;
+    text-align: 50%;
+    font-size: 29px;
+    margin-left: 200px;
+    margin-right: 700px;
+}
+
+.textoQuadrado1 p {
+    background-color: #0e2507;
+}
+
+.textoQuadrado2 {
+    position: absolute;
+    z-index: 2;
+    background-color: #0e2507;
+    color: #FFF;
+    /* Cor do texto */
+    padding: 40px;
+    /* Espaçamento interno do bloco de texto */
+    margin-top: 90px;
+    text-align: 50%;
+    font-size: 25px;
+    margin-left: 700px;
+    margin-right: 200px;
+}
+
+.textoQuadrado2 p {
+    background-color: #0e2507;
+}
+
+.text1Sequencia {
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 60PX;
+    margin-left: 100px;
+    margin-right: 810px;
+}
+
+.text2Sequencia {
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 40PX;
+    margin-left: 740px;
+    margin-right: 130px;
+}
+
+.text3Sequencia {
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 80PX;
+    margin-left: 100px;
+    margin-right: 990px;
+}
+
+.text4Sequencia {
+    border-bottom: 5px solid #0e2901;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 40PX;
+    margin-left: 740px;
+    margin-right: 180px;
+}
+
+.textoQuadrado3- {
+    color: #19eb19;
+    text-align: center;
+    margin-top: 250px;
+    font-size: 50px;
+}
+
+.textoQuadrado3-- {
+    text-align: center;
+    font-size: 2em;
+    color: #FFF;
+    margin-left: 150PX;
+    margin-right: 110px;
+}
+
+/* botao final da pagina principal */
+.botaoCadastroEmpresa {
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 350px;
+    margin-top: 150px;
+}
+
+.botaoCadastroEmpresa:hover {
+    background-color: #1F540F;
+    color: aliceblue
+}
+
+.botaoCadastroOng {
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 16 px;
+}
+
+.botaoCadastroOng:hover {
+    background-color: #1F540F;
+    color: aliceblue
+}
+
+.link-formatado {
+    color: antiquewhite;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+}
+
+.rodape {
+    background-color: #0e2507;
+    color: #FFF;
+    margin-top: 200px;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 2;
+    width: 1310px;
+    height: 90px;
+}
+
+.rodape li {
+    background-color: #0e2507;
+    text-align: center;
+    list-style: none;
+}
+
+.rodape1 {
+    background-color: #0e2507;
+    color: #FFF;
+    margin-top: 1000px;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 2;
+    width: 1310px;
+    height: 90px;
+}
+
+.rodape1 li {
+    background-color: #0e2507;
+    text-align: center;
+    list-style: none;
+}
+
+
+/* breakpoit iphone6 - 375x667 */
+
+@media screen and (max-width:600px) {
+
+    header {
+        position: relative;
+
+        left: 40px;
+        width: 80%;
+        padding: 20px 100px;
+        display: block;
+        justify-content: center;
+
+
+    }
+
+    .logo {
+        height: 100px;
+        margin-left: -80px;
+
+
+    }
+
+
+    /*NAVEGAÇAO NA PARTE DE CIMA */
+    .navigation a {
+        position: relative;
+        font-size: 0.8em;
+        text-align: center;
+        margin-left: 75px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .navigation a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #1F540F;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+
+    .navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .navigation {
+        margin-left: -60px;
+        margin-top: 50px;
+
+    }
+
+    .loginCadastro {
+        position: relative;
+        color: antiquewhite;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 200px;
+        margin-top: -100px;
+    }
+
+    .loginCadastro .botaoLogin {
+        width: 80px;
+        height: 25px;
+        background: transparent;
+        border: 2px solid #1F540F;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8em;
+        color: antiquewhite;
+        font-weight: 500;
+        margin-left: 10px;
+        transition: .5s;
+        margin-top: 50px;
+    }
+
+    .loginCadastro .botaoLogin:hover {
+        background-color: #1F540F;
+        color: aliceblue;
+    }
+
+    /* fim navegaçao e cabeçalho */
+    .wrapper {
+        position: fixed;
+        width: 350px;
+        height: 400px;
+        margin-left: 80px;
+        margin-top: 20px;
+
+    }
+
+
+
+    .wrapper .form-box {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .login-cadastro .registerONG-link {
+        display: block;
+        margin-left: 400px;
+        margin-top: 20px;
+    }
+
+
+
+    .input-box {
+        width: 80%;
+        margin: 30px;
+    }
+
+    /* fim pagina login */
+
+    /* slides */
+    .content {
+        height: 170px;
+        width: 415px;
+        border-radius: 20px;
+        top: 90%;
+        left: 48%;
+    }
+
+    /*arruma a imagem*/
+    .content .slide img {
+        height: 90%;
+        width: 100%;
+    }
+
+
+
+    .navigation-bar {
+        position: absolute;
+        bottom: 100px;
+        left: 210px;
+
+        display: flex;
+        margin-bottom: -150px;
+    }
+
+    /*bar em baixo*/
+    .bar {
+        width: 15px;
+        height: 15px;
+        border: 2px solid #0da30d;
+        margin: 6px;
+        /*deixar redondo*/
+        border-radius: 15px;
+        cursor: pointer;
+
+
+
+    }
+
+
+
+    /*desaparecer bolinhas do input - mas aparece bolinha do label - a ligação ainda funciona*/
+
+
+    input:not([type='text']) OR input:not([type='password']) OR input:not([type='email']) {
+        display: none;
+    }
+
+    /*deixar uma img do lado da outra - antes estava em cima*/
+
+
+
+    /*a cada 20% vai sair uma img e vai para esquerda*/
+    #slide2:checked~.s1 {
+        margin-left: -32%;
+    }
+
+    #slide3:checked~.s1 {
+        margin-left: -41%;
+    }
+
+    .visa {
+        position: absolute;
+        z-index: 2;
+        background-color: #0e2507;
+        color: #FFF;
+        /* Cor do texto */
+        padding: 40px;
+        /* Espaçamento interno do bloco de texto */
+        margin-top: 550px;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 25px;
+    }
+
+    .visa p {
+        background-color: #0e2507;
+    }
+
+    .visa2 {
+        color: #070707;
+        margin-top: 850px;
+        text-align: center;
+        background-color: #030303;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #19eb19;
+        font-size: 3em;
+        color: #070707;
+        margin-left: 30px;
+    }
+
+    .visa3 {
+        color: #070707;
+        margin-top: 400px;
+        text-align: center;
+        background-color: #030303;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #19eb19;
+        font-size: 3em;
+        color: #070707;
+    }
+
+    .textoQuadrado1 {
+        position: absolute;
+        z-index: 2;
+        background-color: #0e2507;
+        color: #FFF;
+        /* Cor do texto */
+        padding: 40px;
+        /* Espaçamento interno do bloco de texto */
+        margin-top: 90px;
+        text-align: 50%;
+        margin-top: 50px;
+
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 30px;
+    }
+
+    .textoQuadrado1 p {
+        background-color: #0e2507;
+    }
+
+    .textoQuadrado2 {
+        position: absolute;
+        z-index: 2;
+        background-color: #0e2507;
+        color: #FFF;
+        /* Cor do texto */
+        padding: 40px;
+        /* Espaçamento interno do bloco de texto */
+        margin-top: 90px;
+        text-align: 50%;
+        font-size: 25px;
+        margin-left: 700px;
+        margin-right: 200px;
+    }
+
+    .textoQuadrado2 p {
+        background-color: #0e2507;
+    }
+
+    .text1Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 18px;
+        margin-top: 60PX;
+        margin-left: 114px;
+        margin-right: 90px;
+    }
+
+    .text2Sequencia {
+
+
+        font-size: 18px;
+        margin-top: 70PX;
+        margin-left: 114px;
+        margin-right: 90px;
+    }
+
+    .text3Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 18px;
+        margin-top: 60PX;
+        margin-left: 114px;
+        margin-right: 90px;
+    }
+
+    .text4Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 18px;
+        margin-top: 60PX;
+        margin-left: 114px;
+        margin-right: 90px;
+    }
+
+    .textoQuadrado3- {
+
+        margin-top: 150px;
+        font-size: 40px;
+    }
+
+    .textoQuadrado3-- {
+
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-left: 70PX;
+        margin-right: 50px;
+    }
+
+    /* botao final da pagina principal */
+    .botaoCadastroEmpresa {
+        margin-left: 140px;
+        margin-top: 150px;
+    }
+
+    .botaoCadastroEmpresa:hover {
+        background-color: #1F540F;
+        color: aliceblue;
+
+    }
+
+    .botaoCadastroOng {
+        margin-left: 140px;
+        margin-top: 20px;
+    }
+
+
+
+    .rodape {
+        background-color: #0e2507;
+        color: #FFF;
+        margin-top: 60px;
+        font-size: 0.8em;
+        position: absolute;
+        z-index: 2;
+        width: 500px;
+        height: 80px;
+    }
+
+    .rodape li {
+        background-color: #0e2507;
+        text-align: center;
+        list-style: none;
+        color: #FFF;
+        margin-top: 8px;
+    }
+}
+
+/* breckpoits tablet  1024x768*/
+@media screen and (max-width:1024px) {
+    header {
+        width: 100%;
+    }
+
+    .logo {
+        height: 100px;
+        margin-right: 740px;
+
+    }
+
+    /*NAVEGAÇAO NA PARTE DE CIMA */
+    .navigation a {
+        position: relative;
+        font-size: 0.7em;
+        color: antiquewhite;
+        text-decoration: none;
+        font-weight: 2500;
+        margin-left: 10px;
+
+    }
+
+    .navigation a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #1F540F;
+        border-radius: 5px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+
+    .navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .navigation {
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .loginCadastro {
+        position: fixed;
+        color: antiquewhite;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 1100px;
+    }
+
+    .loginCadastro .botaoLogin {
+        width: 80px;
+        height: 25px;
+        background: transparent;
+        border: 2px solid #1F540F;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8em;
+        color: antiquewhite;
+        font-weight: 500;
+        margin-left: -150px;
+        transition: .5s;
+        margin-top: 50px;
+    }
+
+    .loginCadastro .botaoLogin:hover {
+        background-color: #1F540F;
+        color: aliceblue;
+    }
+
+    /*FORMULARIO DE LOGIN E CADASTRO */
+    .wrapper {
+
+        margin-left: 300px;
+        margin-top: 150px;
+        overflow: hidden;
+        transform: scale(0);
+        transition: transform .5s ease, height .2s ease;
+        z-index: 100;
+    }
+
+
+    /*PAGINA INDEX CARROSSEL DE IMAGENS E INFORMAÇOES*/
+
+    .content {
+        height: 250px;
+        width: 665px;
+
+        top: 50%;
+        left: 50%;
+
+    }
+
+
+
+
+
+
+    .slides {
+        display: flex;
+
+        /*são 5 img ent é 500%*/
+        width: 500%;
+
+        height: 100%;
+    }
+
+
+
+
+
+    /* FIM Navegaçao entre paginas */
+
+    .visa p {
+        background-color: #0e2507;
+    }
+
+    .visa2 {
+        color: #070707;
+        margin-top: 950px;
+        text-align: center;
+        background-color: #030303;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #19eb19;
+        font-size: 3em;
+        color: #070707;
+    }
+
+    .visa3 {
+        color: #070707;
+        margin-top: 650px;
+        text-align: center;
+        background-color: #030303;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #19eb19;
+        font-size: 3em;
+        color: #070707;
+    }
+
+    .textoQuadrado1 {
+
+        font-size: 25px;
+        margin-left: 100px;
+        margin-right: 590px;
+    }
+
+
+
+    .textoQuadrado2 {
+
+
+        margin-top: 90px;
+        text-align: 50%;
+        font-size: 25px;
+        margin-left: 570px;
+        margin-right: 100px;
+    }
+
+
+
+    .text1Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 20px;
+        margin-top: 60PX;
+        margin-left: 100px;
+        margin-right: 610px;
+    }
+
+    .text2Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 20px;
+        margin-top: 40PX;
+        margin-left: 600px;
+        margin-right: 100px;
+    }
+
+    .text3Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 20px;
+        margin-top: 60PX;
+        margin-left: 100px;
+        margin-right: 760px;
+    }
+
+    .text4Sequencia {
+        border-bottom: 5px solid #0e2901;
+        color: #FFF;
+        font-size: 20px;
+        margin-top: 40PX;
+        margin-left: 600px;
+        margin-right: 100px;
+    }
+
+    .textoQuadrado3- {
+        color: #19eb19;
+        text-align: center;
+        margin-top: 170px;
+        font-size: 50px;
+    }
+
+    .textoQuadrado3-- {
+        text-align: center;
+        font-size: 2em;
+        color: #FFF;
+        margin-left: 150PX;
+        margin-right: 110px;
+    }
+
+    /* botao final da pagina principal */
+    .botaoCadastroEmpresa {
+        width: 200px;
+        height: 45px;
+        background: transparent;
+        border: 2px solid #1F540F;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8em;
+        color: antiquewhite;
+        font-weight: 500;
+        transition: .5s;
+        margin-left: 230px;
+        margin-top: 150px;
+    }
+
+    .botaoCadastroEmpresa:hover {
+        background-color: #1F540F;
+        color: aliceblue
+    }
+
+    .botaoCadastroOng {
+        width: 200px;
+        height: 45px;
+        background: transparent;
+        border: 2px solid #1F540F;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8em;
+        color: antiquewhite;
+        font-weight: 500;
+        transition: .5s;
+        margin-left: 16 px;
+    }
+
+    .botaoCadastroOng:hover {
+        background-color: #1F540F;
+        color: aliceblue
+    }
+
+    .link-formatado {
+        color: antiquewhite;
+        background: transparent;
+        outline: none;
+        text-decoration: none;
+    }
+
+    .rodape {
+        background-color: #0e2507;
+        color: #FFF;
+        margin-top: 200px;
+        font-size: 1.2em;
+        position: absolute;
+        z-index: 2;
+        width: 1310px;
+        height: 90px;
+    }
+
+    .rodape li {
+        background-color: #0e2507;
+        text-align: center;
+        list-style: none;
+    }
+
+
+}

@@ -23,6 +23,7 @@ header {
 .logo {
     height: 100px;
     margin-right: 890px;
+   
 }
 
 /*NAVEGAÇAO NA PARTE DE CIMA */
@@ -783,7 +784,7 @@ h1 {}
     break-inside: avoid;
 }
 
-.imagemPagina1 {
+.imagemPagina3 {
     height: 300px;
     margin-left: 720px;
     margin-top: 250px;
@@ -904,23 +905,7 @@ h1 {}
 /* final box 2 */
 
 /* box tres */
-.box-aplicacao {
-    position: absolute;
-    z-index: 2;
-    background-color: #0e2507;
-    color: #FFF;
-    /* Cor do texto */
-    padding: 40px;
-    /* Espaçamento interno do bloco de texto */
-    margin-top: 60px;
-    text-align: center;
-    font-size: 29px;
-    margin-left: 220px;
-    margin-right: 200px;
-}
-.box-aplicacao p {
-    background-color: #0e2507;
-}
+
 .text1Sequencia-aplicacao {
     color: #FFF;
     margin-top: 320PX;
@@ -1232,3 +1217,6 @@ h1 {}
     font-size: 30px;
     break-inside: avoid;
 }
+
+
+
