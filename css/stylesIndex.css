@@ -646,7 +646,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
 /* breakpoit iphone6 - 375x667 */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:550px) {
 
     header {
         position:absolute;
@@ -910,7 +910,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 1.2em;
         position: absolute;
         z-index: 2;
-        width: 800px;
+        width: 200px;
         height: 90px;
     }
 
@@ -960,7 +960,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         color: antiquewhite;
         text-decoration: none;
         font-weight: 500;
-        margin-left: 800px;
+        margin-left: 650px;
     }
 
     .loginCadastro .botaoLogin {
@@ -986,8 +986,17 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     /*FORMULARIO DE LOGIN E CADASTRO */
     .wrapper {
-
-        margin-left: 200px;
+       
+        width: 350px;
+        height: 420px;
+        
+        margin-left: 400px;
+        margin-top: 150px;
+        overflow: hidden;
+        transform: scale(0);
+        transition: transform .5s ease, height .2s ease;
+        z-index: 100;
+        margin-left: 050px;
         margin-top: 150px;
         overflow: hidden;
         transform: scale(0);
@@ -1002,7 +1011,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         width: 665px;
 
         top: 90%;
-        left: 78%;
+        left: 90%;
 
     }
     .content .slide img {

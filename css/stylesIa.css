@@ -250,7 +250,7 @@ header {
     font-size: 1.2em;
     margin-top: 150px;
     width: 940px;
-    height: 195px;
+    height: 155px;
     background: transparent;
     border: 2px solid #1F540F;
     outline: none;
@@ -518,8 +518,8 @@ header {
 
 /* iphone xr */
 /* breakpoint para max-width: 414px */
-
-@media (max-width: 550px) {
+px) {
+@media (max-width: 550
     header {
         position:absolute;
         top: 0;
@@ -533,8 +533,8 @@ header {
     .logo1 {
         height: 100px;
         margin-left: 630px;
-        width: 90px;
-        height: 70px;
+        width: 150px;
+        height:100px;
     }
 
     .navigation1 a {

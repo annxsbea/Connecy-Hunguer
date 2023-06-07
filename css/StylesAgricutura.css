@@ -250,7 +250,7 @@ header {
     font-size: 1.2em;
     margin-top: 150px;
     width: 1105px;
-    height: 195px;
+    height: 105px;
     background: transparent;
     border: 2px solid #1F540F;
     outline: none;
@@ -514,8 +514,8 @@ header {
     .logo1 {
         height: 100px;
         margin-left: 630px;
-        width: 90px;
-        height: 70px;
+        width: 150px;
+        height:100px;
     }
 
     .navigation1 a {
