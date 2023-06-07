@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+.logo1 {
+    width: 150px;
+    height: 100px;
+    margin-right: 1000px;
+    position: relative;
+
+}
+
+.navigation1 a {
+    position: relative;
+    font-size: 0.8em;
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 2500;
+    margin-left: 30px;
+}
+
+.navigation1 a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #1F540F;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+
+.navigation1 a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.navigation1 {
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+
+/* Esconder o input padrão */
+input[type="radio"] {
+    display: none;
+  }
+  
+  /* Estilizar o radio personalizado */
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 15px; /* Ajuste o espaçamento do radio */
+    cursor: pointer;
+  }
+  
+  input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px; /* Tamanho do radio */
+    height: 10px;
+    border: 2px solid #024611; /* Cor da borda do radio */
+    border-radius: 50%; /* Transformar em um círculo */
+    
+  }
+  
+  /* Estilizar o radio selecionado */
+  input[type="radio"]:checked + label:before {
+    background-color: #084e25; /* Cor de fundo do radio selecionado */
+
+  }
+
+.botaoEnviarCadastro {
+    width: 50%;
+    height: 75px;
+    background-color: #1F540F;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 200px;
+    margin-left: 500px;
+    margin-top: 50px
+}
+
+.cabecalho1 {
+    position: absolute;
+    margin-top: 140px;
+    z-index: 2;
+    font-size: 20px;
+    color: #80e96b;
+}
+
+
+
+.cabecalho1 h2 {
+    background-color: #000000;
+}
+.form-box.CadastroEmpresa {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border-bottom: px solid #0e2901;
+    margin: 0px 0;
+}
+
+.form-box.CadastroOng {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-bottom: 2px solid #0e2901;
+    margin: 0px 0;
+
+}
+.input-grupo-row0 {
+    /* float: left;
+    justify-content: space-between; */
+    margin-top: 180px;
+    display: flex;
+}
+.input-grupo-row1 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+.input-grupo-row2 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+
+.input-grupo-row3 {
+    /* float: left;
+    justify-content: space-between; */
+    display: flex;
+}
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .7s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+.input-box {
+    position: relative;
+    width: 70%;
+    height: 50px;
+    border-bottom: 2px solid #0e2901;
+    margin: 40px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: #FFF;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    margin-bottom: 10px;
+    right: 8px;
+    font-size: 1.1em;
+    color: #426B31;
+    line-height: 45px;
+}
+
+.EnvioCadastro {
+    font-size: .9em;
+    color: #426B31;
+    font-weight: 500;
+    margin: -405px 00px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.EnvioCadastro label input {
+    accent-color: #426B31;
+    margin-right: 3px;
+}
+.EnvioCadastro a {
+    color: #426B31;
+    text-decoration: none;
+}
+.EnvioCadastro a:hover {
+    text-decoration: underline;
+}
+
+
+.condicao {
+    margin-left: 100px;
+    margin-top: 420px
+}
+
+.botaoEnviar {
+    width: 50%;
+    height: 450px;
+    background-color: #1F540F;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.botaoEnviarCadastro {
+    width: 570px;
+    height: 55px;
+    background-color: #1F540F;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    margin-right: 100px;
+    margin-top: 400px;
+    margin-left: 200px;
+}
+.login-cadastro {
+    font-size: 0.9em;
+    color: #ffff;
+    text-align: center;
+    font-weight: 500;
+    margin: 50px 1 15px;
+    margin-left: -700px;
+}
+
+.login-cadastro p a {
+    color: #0b9640;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.login-cadastro p a:hover {
+    text-decoration: underline;
+}
+.rodape2 {
+    background-color: #0e2507;
+    color: #FFF;
+    margin-top: 1000px;
+    font-size: 1.2em;
+    position: absolute;
+    z-index: 2;
+    width: 1310px;
+    height: 90px;
+}
+
+.rodape2 li {
+    background-color: #0e2507;
+ 
+    list-style: none;
+    margin-left: 20px;
+}

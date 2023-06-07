@@ -75,11 +75,11 @@ header {
     margin-left: 140px;
 }
 
-.cabecalhoIA {
+.cabecalhoIA1 {
     position: absolute;
 }
 
-.cabecalhoIA h1 {
+.cabecalhoIA1 h1 {
     margin-top: -305px;
     -webkit-text-stroke-width: 0.7px;
     -webkit-text-stroke-color: #19eb19;
@@ -90,17 +90,17 @@ header {
     break-inside: avoid;
 }
 
-.cabecalhoIA p {
+.cabecalhoIA1 p {
     color: #FFF;
     margin-left: 190px;
     margin-right: 700px;
     text-align: center;
-    margin-top: 60px;
-    font-size: 30px;
+    margin-top: 30px;
+    font-size: 25px;
     break-inside: avoid;
 }
 
-.imagemPagina3 {
+.imagemPagina1 {
     height: 300px;
     margin-left: 720px;
     margin-top: 250px;
@@ -116,7 +116,7 @@ header {
     margin-right: 100px;
     text-align: center;
     margin-top: -280px;
-    font-size: 30px;
+    font-size: 25px;
     break-inside: avoid;
 }
 
@@ -141,74 +141,7 @@ header {
     margin-left: 140px;
 }
 
-.text1Sequencia-aplicacao-ia {
-    color: #FFF;
-    margin-top: 320PX;
-    margin-left: 720px;
-    margin-right: 810px;
-    width: 350px;
-    height: 45px;
-    background: transparent;
-    border: 2px solid #1F540F;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 2em;
-    font-weight: 500;
-    transition: .5s;
-    text-align: center;
-}
 
-.text1Sequencia-aplicacao-ia:hover {
-    background-color: #1F540F;
-    color: aliceblue;
-}
-
-.text2Sequencia-aplicacao-ia {
-    color: #FFF;
-    margin-top: -45PX;
-    margin-left: 200px;
-    margin-right: 810px;
-    width: 350px;
-    height: 75px;
-    background: transparent;
-    border: 2px solid #1F540F;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 2em;
-    font-weight: 500;
-    transition: .5s;
-    text-align: center;
-}
-
-.text2Sequencia-aplicacao-ia:hover {
-    background-color: #1F540F;
-    color: aliceblue;
-}
-
-.text3Sequencia-aplicacao-ia {
-    color: #FFF;
-    margin-top: 60PX;
-    margin-left: 490px;
-    margin-right: 810px;
-    width: 350px;
-    height: 85px;
-    background: transparent;
-    border: 2px solid #1F540F;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 2em;
-    font-weight: 500;
-    transition: .5s;
-    text-align: center;
-}
-
-.text3Sequencia-aplicacao-ia:hover {
-    background-color: #1F540F;
-    color: aliceblue;
-}
 
 .box-aplicacao {
     position: absolute;
@@ -231,15 +164,15 @@ header {
 
 .textoQuadrado-Aplicao {
     text-align: justify;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #FFF;
-    margin-left: 190PX;
+    margin-left: 120PX;
     margin-right: 110px;
-    margin-top: 120PX;
+    margin-top: 50PX;
 }
 
 .textoQuadrado-Aplicao p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     /* Ajuste o valor conforme necessário */
 }
 
@@ -249,8 +182,8 @@ header {
     margin-top: 220px;
     font-size: 1.2em;
     margin-top: 150px;
-    width: 940px;
-    height: 195px;
+    width: 1105px;
+    height: 90px;
     background: transparent;
     border: 2px solid #1F540F;
     outline: none;
@@ -258,13 +191,16 @@ header {
     cursor: pointer;
     font-weight: 500;
     transition: .5s;
-    text-align: center;
+ 
+}
+.textoQuadrado-Aplicao2  p{
+    margin-top: 10px;
 }
 
 .rodape2 {
     background-color: #0e2507;
     color: #FFF;
-    margin-top: 200px;
+    margin-top: 100px;
     font-size: 1.2em;
     position: absolute;
     z-index: 2;
@@ -274,11 +210,77 @@ header {
 
 .rodape2 li {
     background-color: #0e2507;
-    text-align: center;
+ 
     list-style: none;
+    margin-left: 20px;
+}
+.botaoCadastroEmpresa {
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 600px;
+    margin-top: 150px;
 }
 
+.botaoCadastroEmpresa:hover {
+    background-color: #1F540F;
+    color: aliceblue
+}
+.link-formatado {
+    color: antiquewhite;
+    background: transparent;
+    outline: none;
+    text-decoration: none;
+}
+.link {
+    color: #0ad42c;
+}
+.botaoCadastroOng1 {
+    width: 200px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #1F540F;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: antiquewhite;
+    font-weight: 500;
+    transition: .5s;
+    margin-left: 560px;
+    margin-top: 50px;
+}
 
+.botaoCadastroOng1:hover {
+    background-color: #1F540F;
+    color: aliceblue
+}
+.textotextoQuadrado-Aplicao5 p {
+
+    text-align: center;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #19eb19;
+    color: #070707;
+    margin-top: 120px;
+     margin-top: 80px;
+    font-size: 2.7em;
+}
+.textoQuadrado-Aplicao5{
+    text-align: justify;
+    font-size: 2em;
+    color: #FFF;
+    margin-top: 120px;
+    margin-left: 190PX;
+    margin-right: 190px;
+}
 /* ipad mini */
 /* breakpoint para max-width: 768px */
 
@@ -295,9 +297,8 @@ header {
     }
     .logo1 {
         height: 100px;
-        margin-left: 930px;
+        margin-left: 970px;
     }
-    
 
     .navigation1 a {
         margin-left: 590px;
@@ -315,7 +316,7 @@ header {
         margin-top: 50px;
     }
 
-    .cabecalhoIA h1 {
+    .cabecalhoIA1 h1 {
         margin-left: 200px;
     }
 
@@ -334,35 +335,35 @@ header {
         margin-left: 0px;
     }
 
-    .cabecalhoIA {
-        position:relative;
+    .cabecalhoIA1 {
+        position:absolute
     }
 
-    .cabecalhoIA h1 {
+    .cabecalhoIA1 h1 {
         margin-top: -605px;
         -webkit-text-stroke-width: 0.7px;
         -webkit-text-stroke-color: #19eb19;
         font-size: 40px;
         color: #070707;
         z-index: 0;
-        margin-left: 200px;
+        margin-left: 290px;
         break-inside: avoid;
      
     }
 
-    .cabecalhoIA p {
+    .cabecalhoIA1 p {
         color: #FFF;
-        margin-left: 50px;
-        margin-right: 100px;
+        margin-left: 90px;
+        margin-right: 70px;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 30px;
         font-size: 20px;
         break-inside: avoid;
     }
 
-    .imagemPagina3 {
+    .imagemPagina1 {
         height: 300px;
-        margin-left: 160px;
+        margin-left: 180px;
         margin-top: 550px;
         column-span: none;
         -webkit-column-span: none;
@@ -377,18 +378,18 @@ header {
 
     .cabecalhoIA2 p {
         color: #FFF;
-        margin-left: 50px;
+        margin-left: 80px;
         margin-right: 100px;
         text-align: center;
-        margin-top: -500px;
+        margin-top: -450px;
         font-size: 20px;
         break-inside: avoid;
     }
 
     .imagemPagina2 {
         height: 300px;
-        margin-left: 150px;
-        margin-top: 250px;
+        margin-left: 170px;
+        margin-top: 240px;
     }
 
     .colum2 {
@@ -408,46 +409,10 @@ header {
     }
 
 
-    .text1Sequencia-aplicacao-ia {
-        color: #FFF;
-        margin-top: 320PX;
-        margin-left: 420px;
-        margin-right: 810px;
-        width: 200px;
-        height: 45px;
-        font-size: 1em;
-     
-    }
     
-  
-    
-    .text2Sequencia-aplicacao-ia {
-      
-        margin-top: -45PX;
-        margin-left: 90px;
-        margin-right: 810px;
-        width: 200px;
-        height: 45px;
-
-        font-size: 1em;
-      
-    }
-
-    .text3Sequencia-aplicacao-ia {
-      
-        margin-top: 60PX;
-        margin-left: 290px;
-        margin-right: 810px;
-        width: 200px;
-        height: 45px;
-
-        font-size: 1em;
-    }
-    
-  
     .box-aplicacao {
 
-        margin-top: 60px;
+        margin-top: 30px;
         text-align: center;
         font-size: 19px;
         margin-left: 100px;
@@ -461,7 +426,7 @@ header {
        
         margin-left: 120PX;
         margin-right: 110px;
-        margin-top: 100PX;
+        margin-top: 60PX;
     }
     
   
@@ -471,10 +436,21 @@ header {
         margin-top: 220px;
         font-size: 1em;
         margin-top: 150px;
-        width: 490px;
-        height: 195px;
+        width: 590px;
+        height: 115px;
         
     }
+    .botaoCadastroOng1{
+        width: 200px;
+        height: 45px;
+   
+        margin-left: 300px;
+        margin-top: 150px;
+        text-decoration: none;
+    }
+    
+  
+
     
     .rodape2 {
         background-color: #0e2507;
@@ -492,29 +468,8 @@ header {
         text-align: center;
         list-style: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
 
 /* iphone xr */
 /* breakpoint para max-width: 414px */
@@ -549,7 +504,7 @@ header {
     .navigation1 a::after {
         content: '';
         position: absolute;
-        left: 0;
+        left:0;
         bottom: -6px;
         width: 100%;
         height: 3px;
@@ -572,7 +527,7 @@ header {
     }
 
     
-    .cabecalhoIA h1 {
+    .cabecalhoIA1 h1 {
         margin-left: 200px;
     }
 
@@ -595,31 +550,32 @@ header {
         position:relative;
     }
 
-    .cabecalhoIA h1 {
-        margin-top: -405px;
+    .cabecalhoIA1 h1 {
+        margin-top: -400px;
         -webkit-text-stroke-width: 0.7px;
         -webkit-text-stroke-color: #19eb19;
-        font-size: 40px;
+        font-size: 35px;
         color: #070707;
         z-index: 0;
-        margin-left: 90px;
+        margin-left: 0px;
         break-inside: avoid;
+        text-align: center;
      
     }
 
-    .cabecalhoIA p {
+    .cabecalhoIA1 p {
         color: #FFF;
-        margin-left: 80px;
+        margin-left: 40px;
         margin-right: 50px;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 18px;
         font-size: 18px;
         break-inside: avoid;
     }
 
-    .imagemPagina3 {
-        height: 200px;
-        margin-left: 90px;
+    .imagemPagina1 {
+        height: 170px;
+        margin-left: 100px;
         margin-top: 650px;
         column-span: none;
         -webkit-column-span: none;
@@ -629,25 +585,25 @@ header {
     }
 
     .cabecalhoIA2 {
-        position: relative;
-        margin-top: 100px;
+        position:absolute;
+      
     }
 
     .cabecalhoIA2 p {
         color: #FFF;
         
-        margin-left: -150px;
+        margin-left: 20px;
         margin-right: 30px;
         text-align: center;
-        margin-top: 0px;
-        font-size: 17px;
+        margin-top: -300px;
+        font-size: 16px;
         break-inside: avoid;
     }
 
     .imagemPagina2 {
-        height: 200px;
-        margin-left: 90px;
-        margin-top: 150px;
+        height: 170px;
+        margin-left: 89px;
+        margin-top: 140px;
         column-span: none;
         -webkit-column-span: none;
         break-inside: auto;
@@ -673,10 +629,10 @@ header {
 
     .text1Sequencia-aplicacao-ia {
         color: #FFF;
-        margin-top: 320PX;
+        margin-top: 220PX;
         margin-left: 260px;
         margin-right: 810px;
-        width: 100px;
+        width: 120px;
         height: 45px;
         font-size: 1em;
      
@@ -700,7 +656,7 @@ header {
         margin-top: 60PX;
         margin-left: 150px;
         margin-right: 810px;
-        width: 150px;
+        width: 170px;
         height: 45px;
         font-size: 1em;
     }
@@ -708,9 +664,9 @@ header {
   
     .box-aplicacao {
 
-        margin-top: 60px;
+        margin-top: 70px;
         text-align: center;
-        font-size: 0.9em;
+        font-size: 1.2em;
         margin-left: 40px;
         margin-right: 20px;
     }
@@ -720,8 +676,8 @@ header {
     .textoQuadrado-Aplicao {
       
        text-align: center;
-        margin-left: 120PX;
-        margin-right: 110px;
+        margin-left: 50PX;
+        margin-right: 40px;
         margin-top: 100PX;
         font-size: 20px;
     }
@@ -730,14 +686,22 @@ header {
     .textoQuadrado-Aplicao2 {
         color: #eef5ee;
         text-align: center;
-        margin-top: 120px;
+        margin-top: 100px;
         font-size: 0.9em;
-        width: 200px;
-        height: 255px;
+        width: 350px;
+        height: 150px;
         
     }
     .textoQuadrado-Aplicao2  p{
         margin-top: 10px;
+    }
+    .botaoCadastroOng1 {
+        width: 200px;
+        height: 45px;
+   
+        margin-left: 120px;
+        margin-top: 150px;
+        text-decoration: none;
     }
     
     .rodape2 {
@@ -756,26 +720,5 @@ header {
         text-align:left;
         list-style: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
