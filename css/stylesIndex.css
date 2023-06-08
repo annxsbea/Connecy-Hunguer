@@ -663,9 +663,9 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     .logo1 {
         height: 100px;
-        margin-left: 550px;
-        width: 90px;
-        height: 70px;
+        margin-left: -350px;
+        width: 150px;
+        height:100px;
     }
 
     .navigation a {
@@ -698,16 +698,16 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     .navigation {
         margin-left: -60px;
-        margin-top: 50px;
+        margin-top: 150px;
 
     }
 
     .loginCadastro {
-        position: relative;
+        position: absolute;
         color: antiquewhite;
         text-decoration: none;
         font-weight: 500;
-        margin-left: 500px;
+        margin-left: 80px;
     }
 
     .loginCadastro .botaoLogin {
@@ -774,10 +774,16 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     }
 
     /* FIM Navegaçao entre paginas */
-
+.visa{
+    margin-top: 650px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
     .visa p {
         background-color: #0e2507;
-        font-size: 25px;
+        font-size: 15px;
+        
+  
     }
 
     .visa2 {
@@ -794,7 +800,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     .visa3 {
         color: #070707;
-        margin-top: 650px;
+        margin-top: 850px;
         text-align: center;
         background-color: #030303;
         -webkit-text-stroke-width: 0.5px;
@@ -808,6 +814,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 20px;
         margin-left: 100px;
         margin-right: 100px;
+        margin-top: 30px;
     }
 
 
@@ -815,7 +822,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     .textoQuadrado2 {
 
 
-        margin-top: 300px;
+        margin-top: 400px;
         text-align: 50%;
         font-size: 20px;
         margin-left: 100px;
@@ -830,7 +837,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 20px;
         margin-top: 60PX;
         margin-left: 100px;
-        margin-right: 310px;
+        margin-right: 110px;
     }
 
     .text2Sequencia {
@@ -839,7 +846,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 20px;
         margin-top: 60PX;
         margin-left: 100px;
-        margin-right: 310px;
+        margin-right: 110px;
     }
 
     .text3Sequencia {
@@ -848,7 +855,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 20px;
         margin-top: 60PX;
         margin-left: 100px;
-        margin-right: 310px;
+        margin-right: 110px;
     }
 
     .text4Sequencia {
@@ -857,22 +864,23 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 20px;
         margin-top: 60PX;
         margin-left: 100px;
-        margin-right: 310px;
+        margin-right: 110px;
     }
 
     .textoQuadrado3- {
         color: #19eb19;
-        text-align: center;
-        margin-top: 170px;
+       
+        margin-top: 150px;
         font-size: 50px;
+        margin-left: 0px;
     }
 
     .textoQuadrado3-- {
         text-align: center;
         font-size: 1.6em;
         color: #FFF;
-        margin-left: 150PX;
-        margin-right: 110px;
+        margin-left: 30PX;
+        margin-right: 10px;
         margin-top: 20px;
     }
 
@@ -881,7 +889,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         width: 200px;
         height: 45px;
 
-        margin-left: 245px;
+        margin-left: 135px;
         margin-top: 150px;
     }
 
@@ -894,7 +902,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         width: 200px;
         height: 45px;
         margin-top: 30px;
-        margin-left: 245px;
+        margin-left: 135px;
     }
 
     .botaoCadastroOng:hover {
@@ -916,7 +924,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 1.2em;
         position: absolute;
         z-index: 2;
-        width: 200px;
+        width: 500px;
         height: 90px;
     }
 
