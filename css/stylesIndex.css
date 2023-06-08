@@ -18,8 +18,8 @@ header {
     z-index: 99;
 }
 
-.logo {
-    height: 100px;
+.logo1 {
+    height: 90px;
     margin-right: 890px;
 
 }
@@ -663,9 +663,9 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     .logo1 {
         height: 100px;
-        margin-left: -350px;
+        margin-left: 530px;
         width: 150px;
-        height:100px;
+        height: 100px;
     }
 
     .navigation a {
@@ -774,16 +774,17 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     }
 
     /* FIM Navegaçao entre paginas */
-.visa{
-    margin-top: 650px;
-    margin-left: 10px;
-    margin-right: 20px;
-}
+    .visa {
+        margin-top: 650px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
     .visa p {
         background-color: #0e2507;
         font-size: 15px;
-        
-  
+
+
     }
 
     .visa2 {
@@ -869,7 +870,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     .textoQuadrado3- {
         color: #19eb19;
-       
+
         margin-top: 150px;
         font-size: 50px;
         margin-left: 0px;
@@ -948,7 +949,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         z-index: 99;
     }
 
-    .logo {
+    .logo1 {
         height: 100px;
         margin-left: 910px;
     }
@@ -1024,14 +1025,14 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         height: 250px;
         width: 665px;
 
-        top: 90%;
-        left: 90%;
+        top: 65%;
+        left: 60%;
 
     }
 
     .content .slide img {
-        height: 60%;
-        width: 60%;
+        height: 90%;
+        width: 90%;
     }
 
     .slides {
@@ -1043,9 +1044,9 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     .navigation-bar {
         position: absolute;
         bottom: 100px;
-        left: 190px;
+        left: 390px;
         display: flex;
-        margin-bottom: -90px;
+        margin-bottom: -50px;
     }
 
     /* FIM Navegaçao entre paginas */
