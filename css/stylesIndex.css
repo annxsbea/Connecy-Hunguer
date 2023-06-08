@@ -734,12 +734,14 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     /*FORMULARIO DE LOGIN E CADASTRO */
     .wrapper {
 
-        margin-left: 200px;
+        margin-left: 50px;
         margin-top: 150px;
         overflow: hidden;
         transform: scale(0);
         transition: transform .5s ease, height .2s ease;
         z-index: 100;
+        width: 350px;
+        height: 420px;
     }
 
 
@@ -1002,17 +1004,16 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     /*FORMULARIO DE LOGIN E CADASTRO */
     .wrapper {
 
-        width: 350px;
+        width: 450px;
         height: 420px;
-
-        margin-left: 400px;
+        margin-left: 150px;
         margin-top: 150px;
         overflow: hidden;
         transform: scale(0);
         transition: transform .5s ease, height .2s ease;
         z-index: 100;
-        margin-left: 050px;
-        margin-top: 150px;
+      
+      
         overflow: hidden;
         transform: scale(0);
         transition: transform .5s ease, height .2s ease;
