@@ -509,8 +509,8 @@ input[type="radio"] {
 
 /* iphone xr */
 /* breakpoint para max-width: 414px */
+@media (max-width: 680px) and (min-width:200px) {
 
-@media (max-width: 550px) {
     header {
         position:absolute;
         top: 0;
@@ -524,8 +524,8 @@ input[type="radio"] {
     .logo1 {
         height: 100px;
         margin-left: 630px;
-        width: 90px;
-        height: 70px;
+        width: 150px;
+        height:100px;
     }
 
     .navigation1 a {
@@ -540,7 +540,7 @@ input[type="radio"] {
     .navigation1 a::after {
         content: '';
         position: absolute;
-        left:0;
+        left: 0;
         bottom: -6px;
         width: 100%;
         height: 3px;
@@ -562,244 +562,12 @@ input[type="radio"] {
 
     }
 
-    
-    .cabecalhoIA1 h1 {
-        margin-left: 200px;
-    }
-
-    .colum {
-        column-count: 1;
-        column-gap: 0px;
-    }
-
-    .colum-item {
-        break-inside: initial;
-    }
-
-    .colum-item-texto {
-        color: #FFF;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .cabecalhoIA {
-        position:relative;
-    }
-
-    .cabecalhoIA1 h1 {
-        margin-top: -400px;
-        -webkit-text-stroke-width: 0.7px;
-        -webkit-text-stroke-color: #19eb19;
-        font-size: 35px;
-        color: #070707;
-        z-index: 0;
-        margin-left: 0px;
-        break-inside: avoid;
-        text-align: center;
-     
-    }
-
-    .cabecalhoIA1 p {
-        color: #FFF;
-        margin-left: 40px;
-        margin-right: 50px;
-        text-align: center;
-        margin-top: 18px;
-        font-size: 18px;
-        break-inside: avoid;
-    }
-
-    .imagemPagina1 {
-        height: 170px;
-        margin-left: 100px;
-        margin-top: 650px;
-        column-span: none;
-        -webkit-column-span: none;
-        break-inside: auto;
-        page-break-inside: auto;
-       
-    }
-
-    .cabecalhoIA2 {
-        position:absolute;
-      
-    }
-
-    .cabecalhoIA2 p {
-        color: #FFF;
-        
-        margin-left: 20px;
-        margin-right: 30px;
-        text-align: center;
-        margin-top: -300px;
-        font-size: 16px;
-        break-inside: avoid;
-    }
-
-    .imagemPagina2 {
-        height: 170px;
-        margin-left: 89px;
-        margin-top: 140px;
-        column-span: none;
-        -webkit-column-span: none;
-        break-inside: auto;
-        page-break-inside: auto;
-    }
-
-    .colum2 {
-        column: count 1;
-        
-        column-gap: 0px;
-    }
-
-    .colum-item2 {
-        break-inside: avoid;
-    }
-
-    .colum-item-texto2 {
-        color: #FFF;
-        margin-top: 300px;
-        margin-left: 140px;
-    }
-
-
-    .text1Sequencia-aplicacao-ia {
-        color: #FFF;
-        margin-top: 220PX;
-        margin-left: 260px;
-        margin-right: 810px;
-        width: 120px;
-        height: 45px;
-        font-size: 1em;
-     
-    }
-    
-  
-    
-    .text2Sequencia-aplicacao-ia {
-      
-        margin-top: -45PX;
-        margin-left: 50px;
-        margin-right: 810px;
-        width: 130px;
-        height: 45px;
-        font-size: 1em;
-      
-    }
-
-    .text3Sequencia-aplicacao-ia {
-      
-        margin-top: 60PX;
-        margin-left: 150px;
-        margin-right: 810px;
-        width: 170px;
-        height: 45px;
-        font-size: 1em;
-    }
-    
-  
-    .box-aplicacao {
-
-        margin-top: 70px;
-        text-align: center;
-        font-size: 1.2em;
-        margin-left: 40px;
-        margin-right: 20px;
-    }
-    
- 
-    
-    .textoQuadrado-Aplicao {
-      
-       text-align: center;
-        margin-left: 50PX;
-        margin-right: 40px;
-        margin-top: 100PX;
-        font-size: 20px;
-    }
-    
-  
-    .textoQuadrado-Aplicao2 {
-        color: #eef5ee;
-        text-align: center;
-        margin-top: 100px;
-        font-size: 0.9em;
-        width: 350px;
-        height: 120px;
-        
-    }
-    .textoQuadrado-Aplicao2  p{
-        margin-top: 10px;
-    }
-    .botaoCadastroOng1 {
-        width: 200px;
-        height: 45px;
-   
-        margin-left: 120px;
-        margin-top: 150px;
-        text-decoration: none;
-    }
-    
-    .rodape2 {
-        background-color: #0e2507;
-        color: #FFF;
-        margin-top: 100px;
-        font-size: 1.2em;
-        position: absolute;
-        z-index: 2;
-        width: 810px;
-        height: 90px;
-    }
-    
-    .rodape2 li {
-        background-color: #0e2507;
-        text-align:left;
-        list-style: none;
-    }
-
-}
-/* ipad mini */
-/* breakpoint para max-width: 768px */
-
-@media (max-width: 868px) {
-
-    header {
-        position:absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px 100px;
-        display: flex;
-        justify-content: center;
-        z-index: 99;
-    }
-    .logo1 {
-        height: 100px;
-        margin-left: 970px;
-    }
-
-    .navigation1 a {
-        margin-left: 590px;
-        margin-top: -50px;
-        position: relative;
-        font-size: 0.7em;
-        text-align: center;
-        margin-left: 15px;
-
-        margin-top: 10px;
-    }
-
-    .navigation1 {
-        margin-left: 690px;
-        margin-top: 50px;
-    }
 
     .cabecalho1 {
-        position: absolute;
-        margin-top: 240px;
-        z-index: 2;
-        font-size: 20px;
-        color: #80e96b;
+        color: #91eb91;
+        font-size: 1em;
+        margin-left:-320px;
+        margin-top: 400PX;
     }
     
 
@@ -809,7 +577,7 @@ input[type="radio"] {
         width: 100%;
         height: 10px;
         border-bottom: px solid #0e2901;
-        margin: 0px 0;
+        margin: 190px 0;
     }
     
     
@@ -853,10 +621,10 @@ input[type="radio"] {
     }
     .input-box {
         position: relative;
-        width: 70%;
+        width: 30%;
         height: 50px;
         border-bottom: 2px solid #0e2901;
-        margin: 40px;
+        margin: 45px;
     }
     .input-box input {
         width: 100%;
@@ -904,8 +672,9 @@ input[type="radio"] {
     }
     
     .condicao {
-        margin-left: 100px;
-        margin-top: 420px
+        margin-left: 10px;
+        margin-top: 420px;
+    
     }
 
     
@@ -916,7 +685,7 @@ input[type="radio"] {
         text-align: center;
         font-weight: 500;
         margin: 70px 1 15px;
-        margin-left: -100px;
+        margin-left: -50px;
         margin-top: 30px;
     }
     
@@ -981,17 +750,18 @@ input[type="radio"] {
     .rodape2 {
         background-color: #0e2507;
         color: #FFF;
-        margin-top: 1200px;
+        margin-top: 1000px;
         font-size: 1.2em;
         position: absolute;
         z-index: 2;
-        width: 910px;
-        height: 90px;
+        width: 510px;
+        height: -10px;
+        margin-left: -50px;
     }
     
     .rodape2 li {
         background-color: #0e2507;
-      
         list-style: none;
     }
+    
 }

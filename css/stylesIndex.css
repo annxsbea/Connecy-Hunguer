@@ -138,7 +138,7 @@ header {
     margin-left: 10px;
 }
 
-.login-cadastro .registerAgro-link{
+.login-cadastro .registerAgro-link {
     margin-left: 100px;
 }
 
@@ -164,9 +164,11 @@ header {
     color: #52aa26;
     text-align: center;
 }
-.inputbotao{
+
+.inputbotao {
     display: none;
 }
+
 .input-box {
     position: relative;
     width: 70%;
@@ -646,10 +648,10 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
 /* breakpoit iphone6 - 375x667 */
 
-@media screen and (max-width:550px) {
+@media (max-width: 680px) and (min-width:200px) {
 
     header {
-        position:absolute;
+        position: absolute;
         top: 0;
         left: 0;
         width: 180%;
@@ -658,6 +660,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         justify-content: center;
         z-index: 99;
     }
+
     .logo1 {
         height: 100px;
         margin-left: 550px;
@@ -677,7 +680,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     .navigation a::after {
         content: '';
         position: absolute;
-        left:0;
+        left: 0;
         bottom: -6px;
         width: 100%;
         height: 3px;
@@ -700,11 +703,11 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     }
 
     .loginCadastro {
-        position: absolute;
+        position: relative;
         color: antiquewhite;
         text-decoration: none;
         font-weight: 500;
-        margin-left: 100px;
+        margin-left: 500px;
     }
 
     .loginCadastro .botaoLogin {
@@ -718,7 +721,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         font-size: 0.8em;
         color: antiquewhite;
         font-weight: 500;
-        margin-left: -150px;
+        margin-left: -90px;
         transition: .5s;
         margin-top: 50px;
     }
@@ -750,23 +753,26 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         left: 78%;
 
     }
+
     .content .slide img {
         height: 60%;
         width: 60%;
     }
+
     .slides {
         display: flex;
         width: 500%;
         height: 100%;
     }
+
     .navigation-bar {
         position: absolute;
         bottom: 100px;
-        left:190px;
+        left: 190px;
         display: flex;
-        margin-bottom:-90px;
+        margin-bottom: -90px;
     }
-    
+
     /* FIM Navegaçao entre paginas */
 
     .visa p {
@@ -887,7 +893,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     .botaoCadastroOng {
         width: 200px;
         height: 45px;
-     margin-top: 30px;
+        margin-top: 30px;
         margin-left: 245px;
     }
 
@@ -921,10 +927,10 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     }
 }
 
-/* breckpoits tablet  1024x768*/
-@media screen and (max-width:868px) {
+/* breckpoits tablet  864×618*/
+@media (max-width: 1100px) and (min-width:680px) {
     header {
-        position:absolute;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -986,10 +992,10 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
 
     /*FORMULARIO DE LOGIN E CADASTRO */
     .wrapper {
-       
+
         width: 350px;
         height: 420px;
-        
+
         margin-left: 400px;
         margin-top: 150px;
         overflow: hidden;
@@ -1014,32 +1020,36 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
         left: 90%;
 
     }
+
     .content .slide img {
         height: 60%;
         width: 60%;
     }
+
     .slides {
         display: flex;
         width: 500%;
         height: 100%;
     }
+
     .navigation-bar {
         position: absolute;
         bottom: 100px;
-        left:190px;
+        left: 190px;
         display: flex;
-        margin-bottom:-90px;
+        margin-bottom: -90px;
     }
-    
+
     /* FIM Navegaçao entre paginas */
 
     .visa p {
         background-color: #0e2507;
         font-size: 15px;
-      
+
     }
-    .visa{
-        margin-left:100px;
+
+    .visa {
+        margin-left: 100px;
         margin-top: 700px;
         margin-right: 70px;
 
@@ -1158,7 +1168,7 @@ input:not([type='text']) OR input:not([type='password']) OR input:not([type='ema
     .botaoCadastroOng {
         width: 200px;
         height: 45px;
-     margin-top: 30px;
+        margin-top: 30px;
         margin-left: 145px;
     }
 
