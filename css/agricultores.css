@@ -398,7 +398,10 @@ header {
     .cabecalhoIA2 {
         position: absolute;
     }
-
+    .link{
+        color: #19eb19;
+    }
+  
     .cabecalhoIA2 p {
         color: #FFF;
         margin-left: 80px;
@@ -739,7 +742,9 @@ header {
         margin-top: 100PX;
         font-size: 20px;
     }
-    
+    .link{
+        color: #19eb19;
+    }
   
     .textoQuadrado-Aplicao2 {
         color: #eef5ee;
